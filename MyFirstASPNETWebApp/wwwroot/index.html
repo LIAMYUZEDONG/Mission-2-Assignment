@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>YUZE PHOTOGRAPHY</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" />
+
+</head>
+<body>
+    <br />
+    <center><h4 font="Fantasy">YUZE PHOTOGRAPHY</h4></center><br /><br />
+    <center><img id="yuze" src="img/mission2.jpg" style="width:1300px;height:900px;" /></center>
+    <br />
+    <br />
+    <center><p>I hope I can be proficient at ASP.NET and C# and make use of them for my visual artist career</p></center>
+    <br />
+    <br />
+    <br />
+    <center><p font="Fantasy">Top 3 jobs I want to have:</p></center>
+    <center>
+        <ul>
+            <li font="Fantasy">  1: Travel film artist</li>
+            <li font="Fantasy">  2: Photographer</li>
+            <li font="Fantasy">  3: Solution architect</li>
+
+        </ul>
+    </center>
+    <br />
+    <br />
+
+    <br />
+    <br />
+
+
+    <center>
+        <h2>Grade Calculator</h2>
+        <br />
+        <br />
+        <h5>(you can enter: 95, 88, 70, etc. No need to enter % or other signs, only enter number) </h5>
+        <form>
+            <label>Assignment Score:</label>
+            <input id="AssignmentScore" /><br />    <br />
+            <label>Group Project Score:</label>
+            <input id="GroupProjectScore" /><br />    <br />
+            <label>Quizzes Score:</label>
+            <input id="QuizzesScore" /><br />    <br />
+            <label>Exams Score:</label>
+            <input id="ExamsScore" /><br />    <br />
+            <label>INTEX Score:</label>
+            <input id="INTEXScore" /><br />    <br />
+            <br />
+            <br />
+            <input type="submit" id="btnSend" class="class" value="Calculate Grade"/>
+            <br />
+            <br />
+
+        </form>
+    </center>
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script>$("#btnSend").click(function () {
+    var total = ($("#AssignmentScore").val() * 0.55) +
+        ($("#GroupProjectScore").val() * 0.05) +
+        ($("#QuizzesScore").val() * 0.1) +
+        ($("#ExamsScore").val() * 0.2) +
+        ($("#INTEXScore").val() * 0.1)
+
+    if (total >= 94)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: A")
+        )
+
+    else if (total >= 90)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: A-")
+        )
+    else if (total >= 87)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: B+")
+        )
+
+    else if (total >= 84)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: B")
+        )
+    else if (total >= 80)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: B-")
+        )
+    else if (total >= 77)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: C+")
+        )
+    else if (total >= 74)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: C")
+        )
+    else if (total >= 70)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: C-")
+        )
+    else if (total >= 67)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: D+")
+        )
+    else if (total >= 64)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: D")
+        )
+    else if (total >= 60)
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: D-")
+        )
+    else
+        (
+            alert("Total %: " + total + "                  " + "Letter_Grade: E")
+        )
+    })
+
+    
+  
+    </script>
+
+
+
+</body>
+</html>
