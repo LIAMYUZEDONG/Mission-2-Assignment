@@ -2,7 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8" />
+    
+                          <!-- Header that lists your preferred name -->
+    
 <title>YUZE PHOTOGRAPHY</title>
+                          <!--  An icon for the website (displayed on the tab next to the website title) -->
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/default.css" rel="stylesheet" />
@@ -10,14 +14,23 @@
 </head>
 <body>
     <br />
+                           <!-- A webpage title --> 
+    
     <center><h4 font="Fantasy">YUZE PHOTOGRAPHY</h4></center><br /><br />
+    
+                           <!-- A picture of yourself doing something you enjoy --> 
+    
     <center><img id="yuze" src="img/mission2.jpg" style="width:1300px;height:900px;" /></center>
     <br />
     <br />
+                           <!-- A paragraph on what you hope to get out of this IS 413 class -->
+    
     <center><p>I hope I can be proficient at ASP.NET and C# and make use of them for my visual artist career</p></center>
     <br />
     <br />
     <br />
+                           <!-- A list of the Top #3 jobs you are most interested in pursuing when you graduate -->
+    
     <center><p font="Fantasy">Top 3 jobs I want to have:</p></center>
     <center>
         <ul>
@@ -31,7 +44,8 @@
     <br />
     <br />
 
-
+                           <!-- A "Grade Calculator" form that takes as input a percentage scored for each grade category listed in the syllabus--> 
+    
     <center>
         <h2>Grade Calculator</h2>
         <br />
@@ -62,11 +76,12 @@
     <script src="lib/jquery/jquery-3.6.0.min.js"></script>
     
     <script>$("#btnSend").click(function () {
+            
     var total = ($("#AssignmentScore").val() * 0.55) +
-        ($("#GroupProjectScore").val() * 0.05) +
-        ($("#QuizzesScore").val() * 0.1) +
-        ($("#ExamsScore").val() * 0.2) +
-        ($("#INTEXScore").val() * 0.1)
+                ($("#GroupProjectScore").val() * 0.05) +
+                ($("#QuizzesScore").val() * 0.1) +
+                ($("#ExamsScore").val() * 0.2) +
+                ($("#INTEXScore").val() * 0.1)
 
     if (total >= 94)
         (
@@ -118,9 +133,10 @@
         (
             alert("Total %: " + total + "                  " + "Letter_Grade: E")
         )
+            
+            
     })
 
-    
   
     </script>
 
